@@ -1,6 +1,6 @@
 sudo: required
-  service:
-    - docker
+service:
+  - docker
 env: 
   global:
     - SHA = $(git rev-parse HEAD)
