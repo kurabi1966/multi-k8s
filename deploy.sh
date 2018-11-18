@@ -5,9 +5,9 @@ docker build -t kurabi/multi-worker:latest -t kurabi/multi-worker:$SHA -f ./work
 docker build -t kurabi/multi-server:latest -t kurabi/multi-server:$SHA -f ./server/Dockerfile ./server
 
 # Push to docker hub
-docker push kurabi/multi-client:$latest
-docker push kurabi/multi-worker:$latest
-docker push kurabi/multi-server:$latest
+docker push kurabi/multi-client:latest
+docker push kurabi/multi-worker:latest
+docker push kurabi/multi-server:latest
 
 docker push kurabi/multi-client:$SHA
 docker push kurabi/multi-worker:$SHA
